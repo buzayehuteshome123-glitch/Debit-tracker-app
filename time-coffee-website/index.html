@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Time Coffee — Burgers · Pizza · Fresh Juice</title>
+  <meta name="description" content="Time Coffee in Negele Borana: hot burgers, loaded pizzas and fresh juices. Order for pickup or delivery." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Caveat:wght@600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== Header / Navigation ===== -->
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a href="#top" class="logo" aria-label="Time Coffee home">
+        <span class="logo-icon" aria-hidden="true">🍔</span>
+        <span class="logo-text">
+          <strong>Time <span>Coffee</span></strong>
+          <small>Burgers • Pizza • Fresh Juice</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#top" class="active">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#why">About</a>
+        <a href="#visit">Contact</a>
+        <a href="#" class="btn btn-primary btn-sm nav-cta" data-order>🛒 Order Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Fresh Flavors.<br /><span class="accent">Serious Cravings.</span></h1>
+          <p class="lead">Hot burgers, loaded pizzas, and fresh juices made to satisfy every craving.</p>
+          <div class="btn-row">
+            <a href="#" class="btn btn-primary" data-order>Order Now →</a>
+            <a href="#menu" class="btn btn-outline-light">Explore Menu</a>
+          </div>
+          <ul class="hero-badges">
+            <li>🌿 Freshly prepared</li>
+            <li>🛍️ Pickup</li>
+            <li>🛵 Delivery</li>
+          </ul>
+        </div>
+        <div class="hero-media">
+          <div class="hero-img img" style="background-image:url('images/hero.jpg'), url('https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=1000&q=80')" role="img" aria-label="Burger with fries"></div>
+        </div>
+      </div>
+      <svg class="hero-wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0,40 C360,90 1080,0 1440,40 L1440,80 L0,80 Z" /></svg>
+    </section>
+
+    <!-- ===== Our Menu ===== -->
+    <section class="section light" id="menu">
+      <div class="container">
+        <p class="eyebrow center">Our Menu</p>
+        <h2 class="section-title center">Something for Every Craving</h2>
+
+        <div class="card-grid">
+          <article class="menu-card">
+            <div class="img" style="background-image:url('images/burger.jpg'), url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80')" role="img" aria-label="Burger"></div>
+            <div class="menu-card-body">
+              <h3>Burgers</h3>
+              <p>Juicy, freshly prepared burgers with delicious toppings.</p>
+              <a href="#favorites" class="circle-arrow" aria-label="See burgers">→</a>
+            </div>
+          </article>
+          <article class="menu-card">
+            <div class="img" style="background-image:url('images/pizza.jpg'), url('https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80')" role="img" aria-label="Pizza"></div>
+            <div class="menu-card-body">
+              <h3>Pizza</h3>
+              <p>Hot, cheesy pizzas made fresh to order.</p>
+              <a href="#favorites" class="circle-arrow" aria-label="See pizza">→</a>
+            </div>
+          </article>
+          <article class="menu-card">
+            <div class="img" style="background-image:url('images/juice.jpg'), url('https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=600&q=80')" role="img" aria-label="Fresh juice"></div>
+            <div class="menu-card-body">
+              <h3>Fresh Juice</h3>
+              <p>Refreshing fruit juices prepared with fresh ingredients.</p>
+              <a href="#favorites" class="circle-arrow" aria-label="See juices">→</a>
+            </div>
+          </article>
+          <article class="menu-card">
+            <div class="img" style="background-image:url('images/fries.jpg'), url('https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=600&q=80')" role="img" aria-label="Fries"></div>
+            <div class="menu-card-body">
+              <h3>Sides</h3>
+              <p>Crispy fries and delicious sides to complete your meal.</p>
+              <a href="#favorites" class="circle-arrow" aria-label="See sides">→</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="center mt">
+          <a href="#favorites" class="btn btn-outline-dark">View Full Menu →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Popular Picks ===== -->
+    <section class="section dark" id="favorites">
+      <div class="container">
+        <p class="eyebrow">Popular Picks</p>
+        <h2 class="section-title">Customer Favorites</h2>
+
+        <div class="card-grid">
+          <article class="fav-card">
+            <div class="img" style="background-image:url('images/burger.jpg'), url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80')" role="img" aria-label="Classic Burger"></div>
+            <div class="fav-card-body">
+              <h3>Classic Burger</h3>
+              <p>Beef patty, cheese, lettuce, tomato &amp; special sauce</p>
+              <div class="price">700 <span>ETB</span></div>
+              <a href="#" class="btn btn-primary btn-sm" data-order="Classic Burger (700 ETB)">🛒 Order Now</a>
+            </div>
+          </article>
+          <article class="fav-card">
+            <div class="img" style="background-image:url('images/pizza.jpg'), url('https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80')" role="img" aria-label="Loaded Pizza"></div>
+            <div class="fav-card-body">
+              <h3>Loaded Pizza</h3>
+              <p>Cheese, vegetables and your choice of toppings</p>
+              <div class="price">800 <span>ETB</span></div>
+              <a href="#" class="btn btn-primary btn-sm" data-order="Loaded Pizza (800 ETB)">🛒 Order Now</a>
+            </div>
+          </article>
+          <article class="fav-card">
+            <div class="img" style="background-image:url('images/juice.jpg'), url('https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=600&q=80')" role="img" aria-label="Fresh Mixed Juice"></div>
+            <div class="fav-card-body">
+              <h3>Fresh Mixed Juice</h3>
+              <p>Fresh seasonal fruits blended to perfection</p>
+              <div class="price">200 <span>ETB</span></div>
+              <a href="#" class="btn btn-primary btn-sm" data-order="Fresh Mixed Juice (200 ETB)">🛒 Order Now</a>
+            </div>
+          </article>
+          <article class="fav-card">
+            <div class="img" style="background-image:url('images/fries.jpg'), url('https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=600&q=80')" role="img" aria-label="Crispy Fries"></div>
+            <div class="fav-card-body">
+              <h3>Crispy Fries</h3>
+              <p>Golden, crispy and freshly prepared</p>
+              <div class="price">120 <span>ETB</span></div>
+              <a href="#" class="btn btn-primary btn-sm" data-order="Crispy Fries (120 ETB)">🛒 Order Now</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Special Combo ===== -->
+    <section class="section light combo-wrap">
+      <div class="container">
+        <div class="combo">
+          <div class="combo-img img" style="background-image:url('images/combo.jpg'), url('https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&w=800&q=80')" role="img" aria-label="Burger, fries and juice combo"></div>
+          <div class="combo-copy">
+            <p class="combo-label">Special Combo · The Perfect Combo</p>
+            <h2>Burger + Fries + Fresh Juice</h2>
+            <p>A complete meal when you're hungry and want it all.</p>
+            <div class="btn-row">
+              <span class="combo-price">1500 ETB</span>
+              <a href="#" class="btn btn-outline-dark" data-order="The Perfect Combo — Burger + Fries + Fresh Juice (1500 ETB)">Get the Combo</a>
+            </div>
+          </div>
+          <div class="best-value" aria-hidden="true">Best<br />Value!</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Why ===== -->
+    <section class="section light tight" id="why">
+      <div class="container">
+        <h2 class="section-title underline">Why Time Coffee?</h2>
+        <div class="feature-grid">
+          <div class="feature"><span class="feature-icon">🌿</span><div><h3>Freshly Made</h3><p>Prepared fresh when you order.</p></div></div>
+          <div class="feature"><span class="feature-icon">⭐</span><div><h3>Great Taste</h3><p>Quality ingredients and bold flavors.</p></div></div>
+          <div class="feature"><span class="feature-icon">⚡</span><div><h3>Fast Service</h3><p>Get your food without the long wait.</p></div></div>
+          <div class="feature"><span class="feature-icon">🛵</span><div><h3>Easy Ordering</h3><p>Order for pickup or delivery.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== How It Works ===== -->
+    <section class="section light tight">
+      <div class="container">
+        <h2 class="section-title underline">How It Works</h2>
+        <div class="steps">
+          <div class="step"><span class="step-num">01</span><div><h3>Choose</h3><p>Pick your favorite burger, pizza, juice or combo.</p></div></div>
+          <span class="step-arrow" aria-hidden="true">→</span>
+          <div class="step"><span class="step-num">02</span><div><h3>Order</h3><p>Place your order online or through WhatsApp.</p></div></div>
+          <span class="step-arrow" aria-hidden="true">→</span>
+          <div class="step"><span class="step-num">03</span><div><h3>Enjoy</h3><p>Pick it up or have it delivered to you.</p></div></div>
+          <p class="script-note" aria-hidden="true">Good Food<br />Is Always<br />a Good Idea ♡</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Visit Us ===== -->
+    <section class="section light tight" id="visit">
+      <div class="container visit">
+        <div class="visit-img img" style="background-image:url('images/restaurant.jpg'), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80')" role="img" aria-label="Restaurant interior">
+          <span class="visit-sign">☕ Time Coffee</span>
+        </div>
+        <div class="visit-info">
+          <p class="eyebrow">Visit Us</p>
+          <h2 class="section-title">Come Hungry. Leave Happy.</h2>
+          <ul class="contact-list">
+            <li><span>📍</span> Negele Borana, Ethiopia</li>
+            <li><span>🕐</span> Open Daily · 3:00 AM – 3:00 PM</li>
+            <li><span>📞</span> <a href="tel:+251986580996">0986 580 996</a></li>
+            <li><span>💬</span> <a href="#" data-order>Chat on WhatsApp</a></li>
+          </ul>
+        </div>
+        <div class="visit-actions">
+          <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&query=Negele+Borana+Ethiopia" target="_blank" rel="noopener">🗺️ Get Directions</a>
+          <a class="btn btn-whatsapp" href="#" data-order>💬 Order on WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Final CTA + Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <a href="#top" class="logo" aria-label="Time Coffee home">
+        <span class="logo-icon" aria-hidden="true">🍔</span>
+        <span class="logo-text">
+          <strong>Time <span>Coffee</span></strong>
+          <small>Burgers • Pizza • Fresh Juice</small>
+        </span>
+      </a>
+      <div class="footer-cta">
+        <div>
+          <h3>Ready to Eat?</h3>
+          <p>Your next favorite meal is just one order away.</p>
+        </div>
+        <a href="#" class="btn btn-primary btn-sm" data-order>🛒 Order Now</a>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="#top">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#visit">Contact</a>
+        <a href="#" id="privacy-link">Privacy</a>
+      </nav>
+    </div>
+    <p class="copyright">© <span id="year">2026</span> Time Coffee. All rights reserved.</p>
+  </footer>
+
+  <a href="#top" class="to-top" aria-label="Back to top">↑</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
